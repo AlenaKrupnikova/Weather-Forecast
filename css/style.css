@@ -1,16 +1,30 @@
-body {
-    background-color: rgb(115, 115, 192);
+* {
+	box-sizing: border-box;
 }
-.h {
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: #3399cc;
+	border: 18px solid #2b81ac;
+	height: 100%;
+}
+.h1 {
     color: white;
+    width: 50%;
+    margin: 20px 40px;
 }
 .container {
     display:block;
     margin: auto;
     list-style-type: none;
     font-size: 0;
-    height: 400px;
-    width: 600px;
+    padding: 0 40px;
 }
 .Lisabon {
     display: inline-block;
@@ -111,19 +125,25 @@ body {
     width: 100%;
     text-align: center;
     color: white;
-    border: 3px white;
+    border-bottom: 5px white;
     font-size: 24px;
 }
 .li {
     opacity: 0,5;
     cursor: pointer;
 } 
-.li:active{
+.li:hover {
     opacity: 1;
 }
 .Wish {
     color: white;
     display: inline-block;
-    margin-bottom: 30px;
-
+    padding: 20px 40px;
+}
+.container:hover> li {
+    opacity: 0.5;
+}
+.container>li:hover{
+    opacity: 1;
+    transition: opacity 0.5s;
 }
